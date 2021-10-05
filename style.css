@@ -1,0 +1,618 @@
+@import url('http://db.fonts.yjsiu.com/c/9d097da6a9a781eb3dbfd8fe6cab0066?family=DIN+Next+W01+Condensed+Regular');
+@import url('http://db.fonts.yjsiu.com/c/f948b71f29b05d736a9784eae7c0ce42?family=DIN+Next+W01+Condensed+Bold');
+@import url('http://db.fonts.yjsiu.com/c/34b81c818db880a9dc14fb0d75e22d49?family=DIN+Next+W01+Condensed+Light');
+@import url('http://db.fonts.yjsiu.com/c/b7317a898526d532c78c0585ad0ba68d?family=DIN+Next+W01+Condensed+Medium');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*
+font-family: "DIN Next W01 Condensed Light";
+font-family: "DIN Next W01 Condensed Regular";
+font-family: "DIN Next W01 Condensed Medium";
+font-family: "DIN Next W01 Condensed Bold";
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    transition: 0.5s;
+    padding: 0 40px;
+    z-index: 100;
+    background: linear-gradient(180deg, #141414, transparent);
+}
+
+header.sticky{
+    padding: 0 40px;
+    background: #141414;
+}
+
+#nav-logo {
+    position: left;
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+header ul {
+    float: right;
+}
+
+header li {
+    display: inline-block;
+    list-style: none;
+    line-height: 80px;
+}
+
+header a {
+    position: relative;
+    margin: 0 40px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'DIN Next W01 Condensed Regular', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+header a::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 100%;
+    width: 0%;
+    height: 3px;
+    background: #ff0000;
+    transition: 0.4s ease;
+}
+
+header a:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+.home-banner {
+    max-width: 100vw;
+    height: 100vh;
+    background-image:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%),
+    url('assets/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-left-gradient {
+    width: 50vw;
+    height: 100vh;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+.home-content {
+    position: absolute;
+    bottom: 40px;
+}
+
+.crossguard h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    font-size: 144px;
+    line-height: 64px;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.lightsaber h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    font-size: 200px;
+    line-height: 200px;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.subtitle p{
+    font-family: 'DIN Next W01 Condensed Regular', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    color: #FFFFFF;
+    margin-top: -40px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons a {
+    width: 225px;
+    height: 75px;
+    font-family: 'DIN Next W01 Condensed Regular',Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 75px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF0000;
+    text-transform: uppercase;
+    border-radius: 0px 25px;
+    padding: 0;
+    transition: 0.6s all;
+}
+
+.buttons a:last-child {
+    background: #2D2B3C;
+    margin: 0 50px;
+}
+
+.buttons a:hover {
+    -webkit-box-shadow: 0px 0px 30px 0px #FF0000; 
+    box-shadow: 0px 0px 30px 0px #FF0000;
+}
+
+.product {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.product-photo {
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 40%),
+    url('assets/photo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-text {
+    width: 50vw;
+    height: 100vh;
+    padding: 120px;
+    color: #fff;
+    background: #242424;
+}
+
+.product-text h1 {
+    font-family: 'DIN Next W01 Condensed Bold',Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.product-text p {
+    font-family: 'DIN Next W01 Condensed Light',Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    text-align: justify;
+}
+
+.reviews {
+    width: 100%;
+    height: 100vh;
+    padding: 120px 40px;
+    background: #dfdfdf;
+}
+
+.reviews h1 {
+    font-family: 'DIN Next W01 Condensed Bold',Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 72px;
+    margin-bottom: 120px;
+    color: #242424;
+}
+
+.cards-area {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "card1 card2 card3";
+    justify-items: center;
+    text-align: center;
+}
+
+
+.card:nth-child(1) {
+    grid-area: card1;
+}
+
+.card:nth-child(2) {
+    grid-area: card2;
+}
+
+.card:nth-child(3) {
+    grid-area: card3;
+}
+
+
+.card {
+    width: 500px;
+    height: 600px;
+    background: #242424;
+    padding: 30px 0px;
+    color: #FFFFFF;
+    border-radius: 0 50px;
+    transition: 0.5s all;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-person {
+    align-items: center;
+    width: 100%;
+}
+
+.card-person img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card-person h2 {
+    font-family: 'DIN Next W01 Condensed Medium',Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.card-content p {
+    font-family: 'DIN Next W01 Condensed Regular',Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 190px;
+    padding: 0 60px;
+}
+
+.l {
+    float: right;
+    position: relative;
+    content: '';
+    background: #505050;
+    width: 50px;
+    height: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: 0.4s all;
+
+}
+
+.r {
+    float: right;
+    position: relative;
+    content: '';
+    background: #505050;
+    width: 25px;
+    height: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: 0.4s all;
+
+}
+
+.card:hover {
+    -webkit-box-shadow: 0px 0px 20px 0px #000; 
+    box-shadow: 0px 0px 15px 0px #000;
+}
+
+.card:hover .l, .card:hover .r {
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 10px 0px #fff; 
+    box-shadow: 0px 0px 10px 0px #fff;
+}
+
+.parallax {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.7) 10%, rgba(0, 0, 0, 0) 100%),
+    url('assets/banner2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 120px 80px;
+}
+
+.parallax-text {
+    position: relative;
+    float: right;
+    width: 500px;
+}
+
+.parallax-text h1 {
+    text-align: right;
+    font-family: 'DIN Next W01 Condensed Bold',Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 144px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.parallax-text p {
+    font-family: 'DIN Next W01 Condensed Regular',Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: justify;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.parallax-btn {
+    text-align: right;
+}
+
+.parallax-btn a {
+    font-family: 'DIN Next W01 Condensed Regular',Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 75px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF0000;
+    text-transform: uppercase;
+    border-radius: 0px 25px;
+    padding: 20px 60px;
+    transition: 0.6s all;
+}
+
+.parallax-btn a:hover {
+    -webkit-box-shadow: 0px 0px 30px 0px #FF0000; 
+    box-shadow: 0px 0px 30px 0px #FF0000;
+}
+
+.faq {
+    width: 100%;
+    height: 100vh;
+    background: #FF0000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "question1 question2"
+    "question3 faq";
+}
+
+.question:nth-child(1) {
+    grid-area: question1;
+}
+
+.question:nth-child(2) {
+    grid-area: question2;
+}
+
+.question:nth-child(3) {
+    grid-area: question3;
+}
+
+.faq-btn {
+    grid-area: faq;
+}
+
+.faq-btn h1 {
+    font-family: 'DIN Next W01 Condensed Bold',Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 50vh;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #AA0000;
+}
+
+.question {
+    color: #fff;
+    padding: 100px 80px;
+    border: 1px solid #AA0000;
+}
+
+.question h1 {
+    font-family: 'DIN Next W01 Condensed Bold',Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-family: 'DIN Next W01 Condensed Regular', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: justify;
+}
+
+
+.founders {
+    width: 100%;
+    height: 100vh;
+    background: #242424;
+    display: flex;
+    flex-direction: row;
+}
+
+.founders-content {
+    width: 50%;
+    height: 100vh;
+    padding: 120px 120px 0px 40px;
+    color: #fff;
+}
+
+.founders-content h1 {
+    font-family: 'DIN Next W01 Condensed Bold',Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.founders-content p {
+    font-family: 'DIN Next W01 Condensed Regular',Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: justify;
+    margin-bottom: 0;
+    
+}
+
+.founders-photo {
+    width: 50%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 30%),
+    url('assets/kylo-ren2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    height: 400px;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "social copyright footer-nav";
+}
+
+.social {
+    grid-area: social;
+}
+
+.social h1 {
+    font-family: 'DIN Next W01 Condensed Bold',Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.social li {
+    font-family: 'DIN Next W01 Condensed Regular',Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    margin-left: 10px;
+}
+
+.social a {
+    font-size: 32px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 16px;
+    margin-right: 10px;
+}
+
+.copyright {
+    grid-area: copyright;
+    padding-top: 200px;
+}
+
+.copyright p {
+    font-family: 'DIN Next W01 Condensed Regular',Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-nav {
+    grid-area: footer-nav;
+    align-content: center;
+}
+
+.footer-nav ul {
+    float: right;
+}
+
+.footer-nav li {
+    list-style: none;
+    line-height: 30px;
+    text-align: right;
+    margin-bottom: 26px;
+}
+
+.footer-nav a {
+    position: relative;
+    margin: 0 40px;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'DIN Next W01 Condensed Regular', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    transition: 0.6s;
+    text-transform: uppercase;
+}
+
+.footer-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 100%;
+    width: 0%;
+    height: 3px;
+    background: #ff0000;
+    transition: 0.4s ease;
+}
+
+.footer-nav a:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #ff0000;
+}
